@@ -3,7 +3,7 @@
 
 # Basket Promotional Rule Applier
 
-This a command line program written using Node.js and TypeScript which applies specific promotional rules to a dummy basket consisting of items provided via user input. 
+This is a command line program written using Node.js and TypeScript which applies specific promotional rules to a dummy basket consisting of items provided via user input. 
 
 The items the user can select from can be found below:
 
