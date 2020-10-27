@@ -108,7 +108,7 @@ test.each`
   index               | basket                | expected
   ${testcase1.index}  | ${testcase1.basket}   | ${testcase1.expected}
   ${testcase2.index}  | ${testcase2.basket}   | ${testcase2.expected}
-`('Checkout#scan applies discounts directly to basket', (testcase: TestCaseData) => {
+`('Checkout#scan applies discounts directly to basket - variant $index', (testcase: TestCaseData) => {
   const checkout = new Checkout(promotionalRuleSets)
   checkout.scan(testcase.basket)
   expect(checkout.total).toBe(testcase.expected)
