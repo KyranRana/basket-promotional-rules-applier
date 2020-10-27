@@ -19,6 +19,6 @@ export default class PromotionalRulesReceiver {
   
   private isExpired(rule: PromotionalRule): boolean {
     const now = new Date()
-    return !(now > rule.startDate && now < rule.expiryDate)
+    return !(now > rule.startDate && (!rule.expiryDate || now < rule.expiryDate))
   }
 }

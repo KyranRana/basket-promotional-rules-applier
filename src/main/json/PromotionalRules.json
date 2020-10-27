@@ -3,7 +3,6 @@
     "id": 1,
     "name": "Water Bottle Discount",
     "startDate": "2020-10-18T00:00:00.000Z",
-    "expiryDate": "2020-11-18T00:00:00.000Z",
     "condition": {
       "basketItems": {
         "and": [{
@@ -34,7 +33,6 @@
     "id": 2,
     "name": "10% discount over £75",
     "startDate": "2020-10-18T00:00:00.000Z",
-    "expiryDate": "2020-11-18T00:00:00.000Z",
     "condition": {
       "basket": {
         "total": {
