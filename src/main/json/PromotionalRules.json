@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "Water Bottle Discount",
+    "startDate": "2020-10-18T00:00:00.000Z",
+    "expiryDate": "2020-11-18T00:00:00.000Z",
+    "condition": {
+      "basketItems": {
+        "and": [{
+          "itemCriteria": {
+            "id": "0001",
+            "discounted": false
+          },
+          "occurrences": {
+            "operator": ">",
+            "operand": 1
+          }
+        }]
+      }
+    },
+    "action": {
+     "basketItems": [{
+        "itemCriteria": {
+          "id": "0001",
+          "discounted": false
+        },
+        "discount": {
+          "byPrice": 1.96
+        }
+     }]
+    }
+  }, 
+  {
+    "id": 2,
+    "name": "10% discount over £75",
+    "startDate": "2020-10-18T00:00:00.000Z",
+    "expiryDate": "2020-11-18T00:00:00.000Z",
+    "condition": {
+      "basket": {
+        "total": {
+          "operator": ">",
+          "operand": 75
+        }
+      }
+    },
+    "action": {
+      "basket": {
+        "discount": {
+          "byPercent": 10
+        }
+      }
+    }
+  }
+]
