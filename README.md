@@ -1,3 +1,6 @@
+![CI](https://github.com/KyranRana/basket-promotional-rules-applier-node-typescript/workflows/CI/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Basket Promotional Rule Applier
 
 This a command line program written using Node.js and TypeScript which applies specific promotional rules to a dummy basket consisting of items provided via user input. 
