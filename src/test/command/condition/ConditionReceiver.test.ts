@@ -8,7 +8,7 @@ test.each`
   ${'<'}   | ${55}   | ${90}   | ${false}
   ${'='}   | ${45}   | ${45}   | ${true}
   ${'='}   | ${45}   | ${44}   | ${false}
-`('execute ($onValue $operator $operand = $expected)', function({ operator, operand, onValue, expected }) {
+`('execute ($onValue $operator $operand = $expected)', ({ operator, operand, onValue, expected }) => {
   const condition = { operator, operand }
     
   const conditionReceiver = new ConditionReceiver()
