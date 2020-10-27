@@ -53,7 +53,6 @@ const testcase1: TestCaseData = {
     id: 1,
     name: "Water Bottle Discount",
     startDate: new Date("2020-10-18T00:00:00.000Z"),
-    expiryDate: new Date("2020-11-18T00:00:00.000Z"),
     condition: {
       basketItems: {
         and: [{
@@ -118,7 +117,6 @@ const testcase2: TestCaseData = {
     id: 2,
     name: "10% discount over £75",
     startDate: new Date("2020-10-18T00:00:00.000Z"),
-    expiryDate: new Date("2020-11-18T00:00:00.000Z"),
     condition: {
       basket: {
         total: {

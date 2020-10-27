@@ -3,12 +3,12 @@ import { Condition } from '../condition/Condition'
 
 export interface PromotionalRule extends PromotionalRulePartial {
   startDate: Date
-  expiryDate: Date
+  expiryDate?: Date
 }
 
 export interface PromotionalRuleJson extends PromotionalRulePartial {
   startDate: string
-  expiryDate: string 
+  expiryDate?: string 
 }
 
 interface PromotionalRulePartial {
