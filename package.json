@@ -1,7 +1,7 @@
 {
   "name": "basket-promotional-rule-applier",
   "version": "1.0.0",
-  "main": "build/",
+  "main": "build/main/Checkout.js",
   "author": "Kyran Rana",
   "license": "MIT",
   "scripts": {
