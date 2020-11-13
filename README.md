@@ -21,7 +21,7 @@ The promotional rules:
 The steps to run this program:
 1. `cd` into the project directory
 1. `yarn install`
-1. `npm build`
+1. `yarn build`
 1. `node ./build/main/app.js`
 
 Example usage:
