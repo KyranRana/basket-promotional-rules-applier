@@ -9,7 +9,7 @@ export default class PromotionalRuleToTypeConverter
       ...v,
 
       startDate: new Date(v.startDate),
-      expiryDate: new Date(v.expiryDate)
+      ...(v.expiryDate ? { expiryDate: v.expiryDate } : {})
     } as PromotionalRule
   }
 }
