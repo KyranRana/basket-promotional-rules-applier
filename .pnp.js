@@ -45,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prompt-sync", "npm:4.2.0"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:cfef22d8199217b9bc1e0323b43375c44978ab97f06e69830b6ea2f85f143b9a4a01cecd5cd646f17d0e25bef78d729867c8e2f54b8cc20b1da8570497a5ba50#npm:26.4.1"],
+            ["ts-node", "virtual:cfef22d8199217b9bc1e0323b43375c44978ab97f06e69830b6ea2f85f143b9a4a01cecd5cd646f17d0e25bef78d729867c8e2f54b8cc20b1da8570497a5ba50#npm:9.0.0"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=5bf698"]
           ],
           "linkType": "SOFT",
@@ -1062,6 +1063,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["arg", [
+        ["npm:4.1.3", {
+          "packageLocation": "./.yarn/cache/arg-npm-4.1.3-1748b966a8-81b3b40b15.zip/node_modules/arg/",
+          "packageDependencies": [
+            ["arg", "npm:4.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["argparse", [
         ["npm:1.0.10", {
           "packageLocation": "./.yarn/cache/argparse-npm-1.0.10-528934e59d-435adaef5f.zip/node_modules/argparse/",
@@ -1301,6 +1311,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prompt-sync", "npm:4.2.0"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:cfef22d8199217b9bc1e0323b43375c44978ab97f06e69830b6ea2f85f143b9a4a01cecd5cd646f17d0e25bef78d729867c8e2f54b8cc20b1da8570497a5ba50#npm:26.4.1"],
+            ["ts-node", "virtual:cfef22d8199217b9bc1e0323b43375c44978ab97f06e69830b6ea2f85f143b9a4a01cecd5cd646f17d0e25bef78d729867c8e2f54b8cc20b1da8570497a5ba50#npm:9.0.0"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=5bf698"]
           ],
           "linkType": "SOFT",
@@ -1857,6 +1868,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/detect-newline-npm-3.1.0-6d33fa8d37-6d3f67971d.zip/node_modules/detect-newline/",
           "packageDependencies": [
             ["detect-newline", "npm:3.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["diff", [
+        ["npm:4.0.2", {
+          "packageLocation": "./.yarn/cache/diff-npm-4.0.2-73133c7102-81b5cd7ddd.zip/node_modules/diff/",
+          "packageDependencies": [
+            ["diff", "npm:4.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5264,6 +5284,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["ts-node", [
+        ["virtual:cfef22d8199217b9bc1e0323b43375c44978ab97f06e69830b6ea2f85f143b9a4a01cecd5cd646f17d0e25bef78d729867c8e2f54b8cc20b1da8570497a5ba50#npm:9.0.0", {
+          "packageLocation": "./.yarn/$$virtual/ts-node-virtual-6172700e24/0/cache/ts-node-npm-9.0.0-7f58a021c2-49d2ab087f.zip/node_modules/ts-node/",
+          "packageDependencies": [
+            ["ts-node", "virtual:cfef22d8199217b9bc1e0323b43375c44978ab97f06e69830b6ea2f85f143b9a4a01cecd5cd646f17d0e25bef78d729867c8e2f54b8cc20b1da8570497a5ba50#npm:9.0.0"],
+            ["@types/typescript", null],
+            ["arg", "npm:4.1.3"],
+            ["diff", "npm:4.0.2"],
+            ["make-error", "npm:1.3.6"],
+            ["source-map-support", "npm:0.5.19"],
+            ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=5bf698"],
+            ["yn", "npm:3.1.1"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["tunnel-agent", [
         ["npm:0.6.0", {
           "packageLocation": "./.yarn/cache/tunnel-agent-npm-0.6.0-64345ab7eb-03db75a4f9.zip/node_modules/tunnel-agent/",
@@ -5693,6 +5733,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yargs-parser-npm-20.2.3-d0c9b251ab-6504b053bb.zip/node_modules/yargs-parser/",
           "packageDependencies": [
             ["yargs-parser", "npm:20.2.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yn", [
+        ["npm:3.1.1", {
+          "packageLocation": "./.yarn/cache/yn-npm-3.1.1-8ad4259784-bff63b8056.zip/node_modules/yn/",
+          "packageDependencies": [
+            ["yn", "npm:3.1.1"]
           ],
           "linkType": "HARD",
         }]
