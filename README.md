@@ -28,3 +28,5 @@ Example usage:
 Enter item ids: 0001,0001,0002,0003
 £103.47
 ```
+
+To optionally compile the entire app as JS you can run `yarn build`.
