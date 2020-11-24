@@ -48,7 +48,8 @@ export default class Basket implements Discountable {
   }
 
   private needToDiscountByPrice(
-    discount: DiscountBy): discount is DiscountByPrice {
+    discount: DiscountBy
+  ): discount is DiscountByPrice {
     return (discount as DiscountByPrice).byPrice !== undefined
   }
 } 
