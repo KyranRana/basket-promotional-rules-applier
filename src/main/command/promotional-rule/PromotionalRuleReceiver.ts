@@ -58,30 +58,30 @@ export default class PromotionalRuleReceiver {
 
   private needToCheckIfAllBasketItemConditionsAreMet(
     basketItemConditons: PromotionalRuleBasketItemConditions
-    ): basketItemConditons is PromotionalRuleAllBasketItemConditions {
-
+  ): basketItemConditons is PromotionalRuleAllBasketItemConditions {
     return (basketItemConditons as PromotionalRuleAllBasketItemConditions).and !== undefined
   }
 
   private checkAllBasketItemConditionsAreMet(
     basketItems: BasketItem[], 
-    basketItemConditions: PromotionalRuleAllBasketItemConditions): boolean {
-    
+    basketItemConditions: PromotionalRuleAllBasketItemConditions
+  ): boolean {  
     return basketItemConditions.and.every(basketItemCondition => 
       this.checkBasketItemsMeetCondition(basketItems, basketItemCondition))
   }
     
   private checkAnyBasketItemConditionIsMet(
     basketItems: BasketItem[], 
-    basketItemConditions: PromotionalRuleAnyBasketItemCondition): boolean {
-        
+    basketItemConditions: PromotionalRuleAnyBasketItemCondition
+  ): boolean {      
     return basketItemConditions.or.some(basketItemCondition => 
       this.checkBasketItemsMeetCondition(basketItems, basketItemCondition))
   }
 
   private checkBasketItemsMeetCondition(
     basketItems: BasketItem[],
-    basketItemCondition: PromotionalRuleBasketItemCondition): boolean {
+    basketItemCondition: PromotionalRuleBasketItemCondition
+  ): boolean {
     
     const basketItemsMeetingCriteria = basketItems.filter(basketItem => 
       this.checkBasketItemMeetsCriteria(basketItem, basketItemCondition.itemCriteria))
@@ -99,8 +99,9 @@ export default class PromotionalRuleReceiver {
 
   private checkBasketItemMeetsCriteria(
     basketItem: BasketItem, 
-    basketItemCriteria: PromotionalRuleBasketItemSearchCriteria): boolean {
-    
+    basketItemCriteria: PromotionalRuleBasketItemSearchCriteria
+  ): boolean {
+        
     if (basketItemCriteria.id && basketItem.id !== basketItemCriteria.id) {
       return false
     }
@@ -139,7 +140,8 @@ export default class PromotionalRuleReceiver {
   }
 
   private needToDiscountByPrice(
-    discount: DiscountBy): discount is DiscountByPrice {
+    discount: DiscountBy
+  ): discount is DiscountByPrice {
     return (discount as DiscountByPrice).byPrice !== undefined
   }
 }
