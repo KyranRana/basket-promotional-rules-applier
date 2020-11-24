@@ -88,7 +88,9 @@ export default class PromotionalRuleReceiver {
     
     if (basketItemCondition.occurrences) {
       if (!this.conditionReceiver.execute(
-        basketItemCondition.occurrences, basketItemsMeetingCriteria.length)) {
+        basketItemCondition.occurrences, 
+        basketItemsMeetingCriteria.length
+      )) {
         return false
       }
     } else if (basketItemsMeetingCriteria.length == 0) {
